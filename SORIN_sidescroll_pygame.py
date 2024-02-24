@@ -26,7 +26,7 @@ direction = 1
 
 
 #Create window
-screen = pygame.display.swaet_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("2D Platformer Shooter")
 
 
