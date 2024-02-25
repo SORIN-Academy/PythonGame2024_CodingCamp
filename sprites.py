@@ -4,7 +4,7 @@ class Monster(pygame.sprite.Sprite):
     def init(self, x, y):
         super().init()
         self.image = pygame.Surface((50, 50))  # Replace with monster image
-        self.image.fill((255, 0, 0))  # Filling the sprite with red color for visibility
+        self.image.fill((255, 0, 0))  # Filling thesprite with red color for visibility
         self.rect = self.image.get_rect(topleft=(x, y))
         self.speed = 2
 
