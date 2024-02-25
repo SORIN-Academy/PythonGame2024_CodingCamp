@@ -6,7 +6,7 @@ pygame.init()
 
 
 screen = pygame.display.set_mode((1080, 720))
-pygame.display.set_caption('Pygame Installation Test')
+pygame.display.set_caption('Elden Ring Platformer')
 
 # Background
 background = pygame.image.load('Leyndell_Capital.png')
