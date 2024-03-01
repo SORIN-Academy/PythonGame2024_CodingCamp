@@ -5,7 +5,6 @@ import random
 
 pygame.init()
 
-
 #Constants for gameplay
 SCREEN_WIDTH, SCREEN_HEIGHT = 1080, 720
 PLAYER_SPEED = 5
