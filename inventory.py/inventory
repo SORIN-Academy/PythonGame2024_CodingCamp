@@ -1,1 +1,98 @@
+import sys
+import pygame
+
+class Inventory:
+    def __init__(self):
+        self.items={}
+        
+        # Add item to inventory
+    def add_item(self, item, quantity=1):
+        if item in self.items:
+            self.items[item] += quantity
+        else:
+            self.items[item] = quantity
+    
+        # Remove item to inventory
+    def remove_item(self, item, quantity=1):
+        if item in self.items:
+            self.items[item] -= quantity
+            
+            if self.items[item] <= 0:
+                del self.items[item]
+        else:
+            print(f'Item {item} not found in inventory')
+            
+            # Check if item is in inventory
+    def check_item(self, item):
+        return self.items.get(item, 0)
+    
+    def str(self):
+        return f"Inventory: {self.items}"
+    
+    
+class Projectile: 
+    def __init__(self, rect, direction):
+        self.rect = rect
+        self.direction = direction    
+        
+        
+        
+        
+class Weapon:
+    def __init__(self, attack_type, item_id, damage):
+        self.attack_type = attack_type
+        self.item_id = item_id
+        self.damage = damage
+ 
+    
+    
+                                             
+    def use_melee(self):                             #   All attacks need a certain time delay between using
+        #create tall rect in front of player
+        #detect contact
+        #subtract enemy hp
+        print('Melee attack sucessful')
+
+    
+    def use_range(self):                             #  Difficulties arise having each arrow behave independant from each other 
+        #create projectile in front of player
+        #projectile move forward at constant speed
+        #detect contact
+        #subtract enemy hp
+        print('Ranged attack sucessful')
+        
+    def use_magic(self):
+        for i in range(10):
+        #make  long rect in front of player
+        #detect contact
+        #subtract enemy hp
+            print('Magic attack sucessful')
+        
+        
+        
+        
+        
+
+        
+        
+    
+player_inventory = Inventory()
+
+
+player_inventory.add_item("key", 2)
+player_inventory.add_item("coin", 10)
+player_inventory.add_item("potion")
+
+
+player_inventory.remove_item("coin", 5)
+
+
+print(f"Keys: {player_inventory.check_item('key')}")
+print(f"Coins: {player_inventory.check_item('coin')}")
+print(f"Potions: {player_inventory.check_item('potion')}")
+
+sword = Weapon('Melee', 1, 10)
+bow = Weapon('Ranged', 2, 5)
+magic = Weapon('Magic', 3, 1.5)
+
 
