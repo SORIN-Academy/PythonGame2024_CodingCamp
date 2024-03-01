@@ -1,0 +1,46 @@
+## this should control players movement and actions
+
+import sys
+import pygame
+
+pygame.init()
+
+
+
+PLAYER_SPEED = 5
+PROJECTILE_SPEED = 10
+GRAVITY = 0.5
+JUMP_STRENGTH = 10
+KEY_PRESS_JUMP = 0
+PLAYER_HP = 10
+DAMAGE = 2.5
+
+
+#Player setup
+player = pygame.Rect(50, 50, 40, 60)
+player_velocity = [0, 0]
+
+
+def item_select():
+    print('Work in progress')
+    
+def item_pickup():
+    print('Work in progress')
+
+def open():
+    print('Work in progress')
+    
+def use_item():
+    print('Work in progress')
+
+def movement():
+    print('Work in progress')
+    
+def jump():
+    print('Work in progress')
+
+def sprint():
+    print('Work in progress')
+    
+
+    
